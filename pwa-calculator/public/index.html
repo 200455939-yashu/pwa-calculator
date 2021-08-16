@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="">
+ 		<title>PWA</title>
+		<link rel="stylesheet" href="src/master.css">
+		<link rel="manifest" href="./manifest.json">
+		<link rel="shortcut icon" href="#">
+
+
+	</head>
+	<body>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="/__/firebase/8.6.8/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+
+		<!-- Initialize Firebase -->
+		<script src="/__/firebase/init.js"></script>
+		<script src="/serviceWorker.js"></script>
+		<div class="h-100 row align-items-center">
+			<div class="col">
+					<p>Hello Universe</p>
+
+					<!-- <button class = "title ">Calculator(Click here to install)</button> -->
+					<table border="1">
+						 <tr>
+							<td colspan="3"><input type="text" id="result"/></td>
+							<td><input type="button" value="c" onclick="clr()"/> </td>
+						 </tr>
+						 <tr>
+
+							<td><input type="button" value="1" onclick="dis('1')"/> </td>
+							<td><input type="button" value="2" onclick="dis('2')"/> </td>
+							<td><input type="button" value="3" onclick="dis('3')"/> </td>
+							<td><input type="button" value="/" onclick="dis('/')"/> </td>
+						 </tr>
+						 <tr>
+							<td><input type="button" value="4" onclick="dis('4')"/> </td>
+							<td><input type="button" value="5" onclick="dis('5')"/> </td>
+							<td><input type="button" value="6" onclick="dis('6')"/> </td>
+							<td><input type="button" value="-" onclick="dis('-')"/> </td>
+						 </tr>
+								  <tr>
+							<td><input type="button" value="7" onclick="dis('7')"/> </td>
+							<td><input type="button" value="8" onclick="dis('8')"/> </td>
+							<td><input type="button" value="9" onclick="dis('9')"/> </td>
+							<td><input type="button" value="+" onclick="dis('+')"/> </td>
+						 </tr>
+						 <tr>
+							<td><input type="button" value="." onclick="dis('.')"/> </td>
+							<td><input type="button" value="0" onclick="dis('0')"/> </td>
+							<!-- solve function call function solve to evaluate value -->
+							<td><input type="button" value="=" onclick="solve()"/> </td>
+							<td><input type="button" value="*" onclick="dis('*')"/> </td>
+						 </tr>
+					</table>
+
+				</div>
+			</div>
+			<script src="src/index.js"></script>
+		</body>
+		<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.0/bootstrap.min.js"></script> -->
+</html>

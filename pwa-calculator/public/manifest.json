@@ -1,0 +1,18 @@
+{
+	"name": "PWA sample Calculator APP",
+	"short_name" : "Calculator app",
+	"start_url": ".",
+	"background_color" : "#6dcdb1",
+	"theme_color" : "#009578",
+	"display": "standalone",
+	"icons": [
+		{
+			"src" : "images/logo512.png"
+			
+		},
+		{
+			"src" : "images/logo192.png"
+			
+		}
+	]
+}
